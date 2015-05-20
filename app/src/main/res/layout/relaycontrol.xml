@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Controller"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <RadioGroup 
+        android:layout_marginTop="10.0px"
+        android:layout_marginLeft="15.0px"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+        android:id="@+id/radio_type" 
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="choose communicate devices："
+            android:textSize="15dip" />
+        <RadioButton
+            android:id="@+id/rb_pc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="PC" />
+        <RadioButton
+            android:id="@+id/rb_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone" />
+</RadioGroup>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="relay-1: "
+            android:textSize="15dip" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="on"
+            android:textOn="off" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="relay-2: "
+            android:textSize="15dip" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="on"
+            android:textOn="off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="relay-3: "
+            android:textSize="15dip" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="on"
+            android:textOn="off" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="relay-4: "
+            android:textSize="15dip" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="on"
+            android:textOn="off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="turn off" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine" 
+            android:hint="reciver_view">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" 
+            android:hint="sender_view"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:layout_gravity="right" />
+    
+</LinearLayout>
